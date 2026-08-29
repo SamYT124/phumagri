@@ -83,5 +83,8 @@ p {
 }
 
 .main-content {
-    display: none;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: none;
 }

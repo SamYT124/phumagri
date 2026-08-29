@@ -18,6 +18,8 @@ const surveyAnswers = {};
 const quest2Sur = document.getElementById('q2');
 const farmopt = document.getElementById('farOpt');
 const custopt = document.getElementById('cusOpt');
+const mainweb = document.getElementById('main');
+const survey = document.getElementById('survey');
 
 function saveAnswer(questionKey, answerValue, currentStep) {
     surveyAnswers[questionKey] = answerValue;
@@ -39,8 +41,11 @@ function saveAnswer(questionKey, answerValue, currentStep) {
             quest2Sur.textContent = '以下哪项最能描述你?';
             farmopt.textContent = '农民';
             custopt.textContent = '买主';
-        } else {
-            return;
-        }
+        } 
+    }
+
+        if (currentStep === 2) {
+        document.querySelector('.survey-wrap').style.display = 'none'; 
+        mainweb.style.display = 'block'; 
     }
 }
