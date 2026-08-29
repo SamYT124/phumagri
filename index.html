@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhumAgri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="logo.png" alt="Website Logo" class="loading-logo">
+  </div>
+  <div class="survey-wrap">
+  <div class="survey-card">
+    <div class="question-step active" data-step="1">
+      <h2>What is your preferred language?</h2>
+      <button class="survey-btn" onclick="saveAnswer('lang', 'eng', 1)">English</button>
+      <button class="survey-btn" onclick="saveAnswer('lang', 'khm', 1)">ខ្មែរ</button>
+      <button class="survey-btn" onclick="saveAnswer('lang', 'chi', 1)">中文</button>
+    </div>
+    
+    <div class="question-step" data-step="2">
+      <h2 id="q2">Which of these descibe you best?</h2>
+      <button id='farOpt' class="survey-btn" onclick="saveAnswer('user', 'farmer', 2)">Farmer</button>
+      <button id="cusOpt" class="survey-btn" onclick="saveAnswer('user', 'custom', 2)">Customer</button>
+    </div>
+  </div>
+  </div>
+  <main class="main-content">
+    <h1>phumagri</h1>
+    <p>stuff blah</p>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
