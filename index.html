@@ -24,6 +24,37 @@
       <button id='farOpt' class="survey-btn" onclick="saveAnswer('user', 'farmer', 2)">Farmer</button>
       <button id="cusOpt" class="survey-btn" onclick="saveAnswer('user', 'custom', 2)">Customer</button>
     </div>
+
+    <div class="question-step" data-step="3">
+      <h2 id="q2">Sign Up to PhumAgri</h2>
+        <form id="signupForm">
+          <div class="input-group">
+            <label for="regUsername">Username</label>
+            <input type="text" id="regUsername" required placeholder="Pick a username">
+            <label id="error">err</label>
+          </div>
+          <br>
+          <div class="input-group">
+            <label for="regAge">Age</label>
+            <input type="number" id="regAge" min="1" max="120" required placeholder="Your age">
+            <label id="error2">err</label>
+          </div>
+          <br>
+          <div class="input-group">
+              <label for="regPassword">Password</label>
+              <input type="password" id="regPassword" required placeholder="Choose a password">
+              <label id="error3">err</label>
+          </div>
+          <br>
+          <div class="input-group">
+              <label for="retPassword">Retype Password</label>
+              <input type="password" id="retPassword" required placeholder="Retype password">
+              <label id="error4">err</label>
+          </div>
+          <br>
+          <button type="submit" class="btn-signup">Sign Up</button>
+      </form>
+    </div>
   </div>
   </div>
   <main id="main" class="main-content">
